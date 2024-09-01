@@ -4,7 +4,7 @@ export default function Page({ sampleAtomValue}: {
   sampleAtomValue: string;
 }) {
   return (
-    <HydrationBoundaryComponent sampleAtomValue={sampleAtomValue} />
+    <HydrationBoundaryComponent sampleAtomValue={sampleAtomValue} key={sampleAtomValue} />
   );
 }
 

@@ -4,7 +4,7 @@ export default function Page({ sampleAtomValue}: {
   sampleAtomValue: string;
 }) {
   return (
-    <UseHydrateAtom sampleAtomValue={sampleAtomValue} />
+    <UseHydrateAtom sampleAtomValue={sampleAtomValue} key={sampleAtomValue} />
   );
 }
 

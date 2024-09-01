@@ -4,7 +4,7 @@ export default function Page({ sampleAtomValue}: {
   sampleAtomValue: string;
 }) {
   return (
-    <HydrationBoundaryWithRenderingBoundary sampleAtomValue={sampleAtomValue} />
+    <HydrationBoundaryWithRenderingBoundary sampleAtomValue={sampleAtomValue} key={sampleAtomValue} />
   );
 }
 
