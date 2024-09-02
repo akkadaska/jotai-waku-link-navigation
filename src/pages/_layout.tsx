@@ -5,8 +5,9 @@ import { RootLayoutWrapper } from '../components/RootLayoutWrapper';
 
 export default async function RootLayout({ children }: PropsWithChildren) {
 
+  const dateString = new Date().toLocaleString();
   return (
-    <RootLayoutWrapper>
+    <RootLayoutWrapper dateString={dateString}>
       <html lang="en">
         <body>
         <Link to="/use-hydrate-atom/a"><span className='text-blue-500 underline hover:text-blue-700 mx-2'>/use-hydrate-atom/a</span></Link>
